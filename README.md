@@ -1,4 +1,4 @@
-# HTML KickStart
+# HTML KickStart -Responsive
 
 ## What is HTML KickStart?
 

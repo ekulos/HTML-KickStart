@@ -17,6 +17,7 @@
  & MinWidth: 960px
  & MaxWidth: 1080px
  */
+ .container { width: 960px; }
 .col_1  { width: 6.6666666666667%; }
 .col_2  { width: 15%; }
 .col_3  { width: 23.333333333333%; }
@@ -29,6 +30,60 @@
 .col_10 { width: 81.666666666667%; }
 .col_11 { width: 90%; }
 .col_12 { width: 98.333333333333%; }
+
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+        .container { width: 768px; }
+    }
+
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 767px) {
+        .container { width: 300px; } 
+        .container .col_1,
+		.container .col_2,
+		.container .col_3,
+		.container .col_4,
+		.container .col_5,
+		.container .col_6,
+		.container .col_7,
+		.container .col_8,
+		.container .col_9,
+		.container .col_10,
+		.container .col_11,
+		.container .col_12 { width: 260px; }
+
+    }
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .container { width: 420px; }
+        .container .col_1,
+		.container .col_2,
+		.container .col_3,
+		.container .col_4,
+		.container .col_5,
+		.container .col_6,
+		.container .col_7,
+		.container .col_8,
+		.container .col_9,
+		.container .col_10,
+		.container .col_11,
+		.container .col_12 { width: 380px; }
+    }
 
 .col_1,
 .col_2,
@@ -93,4 +148,4 @@ background:#efefef;
 .col_11 .inner,
 .col_12 .inner{
 	padding:10px;
-}
+}.container 
